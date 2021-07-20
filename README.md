@@ -16,7 +16,7 @@ https://george-ongaya1.github.io/leo/
 ## Setup/Installation Requirements
 
 - Open terminal (Ctrl+Alt+T)
-- Copy the url https://github.com/george-ongaya1/leo.git
+- Copy the url git clone https://github.com/george-ongaya1/leo.git
 - cd tuesday
 - code . depending on the text editor of your choosing.
 
