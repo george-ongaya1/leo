@@ -8,13 +8,15 @@ import { GoalDetailComponent } from './goal-detail/goal-detail.component';
 import { DateCountPipe } from './date-count.pipe';
 import { GoalFormComponent } from './goal-form/goal-form.component';
 import { FormsModule } from '@angular/forms';
+import { LikeComponent } from './like/like.component';
 @NgModule({
   declarations: [
     AppComponent,
     GoalComponent,
     GoalDetailComponent,
     DateCountPipe,
-    GoalFormComponent
+    GoalFormComponent,
+    LikeComponent
      
   ],
   imports: [
