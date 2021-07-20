@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-
+import { Goal } from '../goal';
 @Component({
   selector: 'like-box',
   templateUrl: './like.component.html',

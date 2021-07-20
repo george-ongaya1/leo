@@ -7,12 +7,13 @@ import { Goal } from '../goal';
 })
 export class GoalComponent implements OnInit {
   goals: Goal[] = [
-    new Goal(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
-    new Goal(2,'Buy Cookies','I have to buy cookies for the parrot',new Date(2019,6,9)),
-    new Goal(3,'Get new Phone Case','Diana has her birthday coming up soon',new Date(2022,1,12)),
-    new Goal(4,'Get Dog Food','Pupper likes expensive snacks',new Date(2019,0,18)),
-    new Goal(5,'Solve math homework','Damn Math',new Date(2019,2,14)),
-    new Goal(6,'Plot my world domination plan','Cause I am an evil overlord',new Date(2030,3,14)),
+    new Goal(1, 'Teacher quote by A. P. J. Abdul Kalam', 'Teaching is a very noble profession that shapes the character, caliber, and future of an individual. If the people remember me as a good teacher, that will be the biggest honour for me.',new Date(2022,7,20)),
+    new Goal(2,'Wisdom quote by Mark Twain','It is better to keep your mouth closed and let people think you are a fool than to open it and remove all doubt'
+     ,new Date(2022,7,20)),
+    new Goal(3,'Oriental quote by Confucious','He who learns but does not think, is lost! He who thinks but does not learn is in great danger',new Date(2017,7,20)),
+   
+    new Goal(4,'Strategy quote by Sun Tzu','If you know the enemy and know yourself you need not fear the results of a hundred battles. ',new Date(2022,1,18)),
+     
   ];
   toggleDetails(index:any){
     this.goals[index].showDescription = !this.goals[index].showDescription;
@@ -36,6 +37,15 @@ export class GoalComponent implements OnInit {
     goal.id = goalLength+1;
     goal.completeDate = new Date(goal.completeDate)
     this.goals.push(goal)
+  }
+  numberOflikes: number = 0;
+
+  likeButtonclick() {
+    this.numberOflikes++;
+  }
+
+  dislikeButtonclick() {
+    this.numberOflikes--;
   }
   constructor() { }
 

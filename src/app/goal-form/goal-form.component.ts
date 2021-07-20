@@ -12,6 +12,15 @@ export class GoalFormComponent implements OnInit {
   submitGoal(){
 this.addGoal.emit(this.newGoal);
   }
+  numberOflikes: number = 0;
+
+  likeButtonclick() {
+    this.numberOflikes++;
+  }
+
+  dislikeButtonclick() {
+    this.numberOflikes--;
+  }
   constructor() { }
 
   ngOnInit(): void {
