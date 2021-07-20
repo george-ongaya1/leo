@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-like',
+  selector: 'like-box',
   templateUrl: './like.component.html',
-  styleUrls: ['./like.component.css']
+ 
 })
-export class LikeComponent implements OnInit {
+export class LikeComponent{
+numberOflikes:number=0;
 
-  constructor() { }
+likeButtonclick(){
 
-  ngOnInit(): void {
-  }
+}
+ 
+}
+likeButtonclick(){
 
 }
