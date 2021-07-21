@@ -39,14 +39,15 @@ export class GoalComponent implements OnInit {
     this.goals.push(goal)
   }
   numberOflikes: number = 0;
-
+  numberOfDislikes: number = 0;
   likeButtonclick() {
     this.numberOflikes++;
   }
 
   dislikeButtonclick() {
-    this.numberOflikes--;
+    this.numberOflikes++;
   }
+
   constructor() { }
 
   ngOnInit() {

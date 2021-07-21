@@ -16,13 +16,13 @@ export class GoalDetailComponent implements OnInit {
     this.isComplete.emit(complete);
   }
   numberOflikes: number = 0;
-
+  numberOfDislikes:number=0;
   likeButtonclick() {
     this.numberOflikes++;
   }
 
   dislikeButtonclick() {
-    this.numberOflikes--;
+    this.numberOfDislikes++;
   }
   constructor() { }
 
